@@ -8,11 +8,12 @@ html, body {
 body {
   min-height: 100%;
   background-size: 100%;
-  /* background-image: linear-gradient(#A1FFCE, #FAFFD1);
-  background-image: -moz-linear-gradient(#A1FFCE, #FAFFD1);
-  background-image: -o-linear-gradient(#A1FFCE, #FAFFD1);
-  background-image: -webkit-linear-gradient(#A1FFCE, #FAFFD1); */
   background-attachment: fixed;
+}
+
+section {
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -20,7 +21,7 @@ a {
 }
 
 a:hover {
-  color: black;
+  color: #76323F;
 }
 
 li {
@@ -30,13 +31,8 @@ li {
 h1, h2, h3, a {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
-  color: #494949;
+  color: #565656;
   text-transform: uppercase;
-}
-
-h2 {
-  color: #5d7177;
-  font-weight: 300;
 }
 
 h3 {
@@ -47,13 +43,13 @@ h3 {
 
 h4, p {
   font-family: "Merriweather", serif;
-  color: #494949;
+  color:#565656;
 }
 
 hr {
   width: 30px;
   height: 3px;
-  background-color: #494949;
+  background-color: #565656;
   border: 0px;
   margin: 0 auto 40px auto;
 }
@@ -84,11 +80,11 @@ z-index: 1;
   font-size: 30px;
   float: left;
   margin: 22px 0 0 50px;
-  color: #898d8b;
+  color: #565656;
 }
 
 #logo a:hover {
-  color: rgb(41, 40, 40);
+  color: #76323F;
 }
 
 header nav {
@@ -99,7 +95,7 @@ header nav {
 header nav ul li {
   float: left;
   margin-left: 40px;
-  color: #898d8b;
+  color:#565656;
 }
 
 .menu a {
@@ -108,7 +104,7 @@ header nav ul li {
 }
 
 header nav ul li:hover {
-  color: rgb(41, 40, 40);
+  color: #76323F;
 }
 
 
@@ -116,24 +112,39 @@ header nav ul li:hover {
 
 #welcome-section {
 height: 100%;
+<<<<<<< HEAD
 background: url(img/see.jpg);
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
+||||||| merged common ancestors
+background: url(img/ichSee.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+=======
+background: url(img/see.jpg);
+background-position: center center;
+background-size: cover;
+background-attachment: fixed;
+>>>>>>> 582ca1a878705edf14cb9c033f73a6f6a3a351bf
 }
 
 #welcome-section h1 {
-  text-align: left;
+  text-align: center;
   color: white;
   font-size: 100px;
-  margin: 23% auto 0 15%;
+  margin-top: 20%;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 2px black;
 }
 
 #welcome-section h2 {
   color: white;
   font-size: 21px;
-  text-align: left;
-  margin: 2% auto 0 15%;
+  text-align: center;
+  padding: 5px;
+  text-shadow: 1px 1px 2px black;
 }
 
 /* About */
@@ -176,17 +187,16 @@ background: url(img/see.jpg);
   text-align: justify;
   font-size: 50px;
   padding: 0 10%;
+  color: #565656;
 }
 
 #about a:hover {
-  color: black;
+  color: #76323F;
 }
 
 /* Work */
-
 #work {
-  min-height: 100%;
-  background-color: #d9f2e6;
+  height: 100%;
 }
 
 #projects {
@@ -198,7 +208,7 @@ background: url(img/see.jpg);
 }
 
 .project-tile {
-  background-color: white;
+  background-color: #d7cec7;
   margin: 2%;
   width: 25%;
   box-shadow: 5px 5px 10px #888888;
@@ -224,14 +234,35 @@ margin-top: 10%;
 
   /* Contact*/
 
-  form input, textarea {
+ #contact {
+  height: 90%;
+  background: url(img/telefon.png);
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+ } 
+
+ .contact i {
+   font-size: 5em;
+   margin: 12% 5%;
+   color: #565656;
+ }
+
+ .contact a i:hover {
+    color: #76323F;
+ }
+
+
+  /* form input, textarea {
     font-family: "Merriweather", serif;
     font-size: 15px;
     margin-bottom: 10px;
     border-radius: 2px;
     border: 2px solid;
-    border-color: #49494948;
+    border-color: #565656;
     outline: none;
+    opacity: 0.7;
   }
 
 form input:first-child {
@@ -251,41 +282,44 @@ form textarea {
 }
 
 .input_text {
-  color: #494949;
+  color: black;
   padding-left: 10px;
 }
 
 .button {
-  color: #494949;
+  color: #d7cec7;
+  background-color: #565656;
   width: 30%;
   height: 40px;
 }
 
 .button:hover {
-  background-color: #494949;
-  color: #f0f0f0;
-}
+  background-color: #d7cec7;
+  color: #565656;
+} */
 
 /* Footer*/
 
 footer {
   width: 100%;
-  height: 70px;
-  background-color: #d9f2e6;
+  height: 50px;
+  margin: 0;
 }
 
 footer p {
   font-size: 12px;
-  color: #A1FFCE;
-  padding-top: 30px;
+  color: black;
+  padding-top: 15px;
 }
 
+/* Impressum */
 #imprint {
   width: 50%;
-  background-color: #d9f2e6;
+  background-color: #d7cec7;
+  border-radius: 3px;
   text-align: left;
   margin: 5% auto;
-  padding: 5% 15%;
+  padding: 5%;
   line-height: 1.5;
 }
 
@@ -312,9 +346,15 @@ header {
   height: auto;
   padding-bottom: 4px;
 }
+
+section {
+height: auto;
+}
+
   #logo {
   font-size: 20px;
-  margin-top: 12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   }
 
   #welcome-section h1 {
@@ -327,33 +367,36 @@ header {
 }
 
   header nav {
-    margin-top: 0;
+    margin-top: 5px;
   }
 
   header nav ul li {
-font-size: 12px;
+font-size: 15px;
   }
 
 h3 {
-  padding-top: 12%;
-  font-size: 40px;
+  padding-top: 10%;
+  font-size: 35px;
 }
 
 #about p {
   width: 80%;
 }
 
-#mkz {
-  float: none;
-width: 70%;
-margin: 15px auto;
-}
-
 #projects {
-  width: 80%;
+  width: 95%;
   margin: 20px auto 0 auto;
+  font-size: 0.8em;
 }
 
+#imprint {
+  width: 80%;
+  padding: 3%;
+}
+
+#imprint i {
+  top: 90px;
+}
 
 }
 
@@ -365,17 +408,22 @@ margin: 15px auto;
     padding-bottom: 4px;
   }
 
-    #logo {
-    font-size: 15px;
-    margin-top: 7px;
+  section {
+    min-width: 100%;
+  }
+
+  #logo {
+    font-size: 8px;
+    margin-top: 0;
     }
 
     #welcome-section h1 {
-      font-size: 40px;
+      margin-top: 60%;
+      font-size: 35px;
     }
 
   #welcome-section h2 {
-    font-size: 14px;
+    font-size: 12px;
     margin-top: 5px;
   }
 
@@ -386,12 +434,12 @@ margin: 15px auto;
 
     header .fa-bars {
       font-size: 17px;
-      padding-top: 5px;
+      /* padding-top: 5px; */
       display: inline-block;
-      width: 100%;
+      /* width: 100%; */
       cursor: pointer;
       text-align: right;
-      margin: -25px 30px 0 0;
+      margin: 0;
     }
 
   header .fa-bars:hover {
@@ -412,9 +460,9 @@ header nav ul.open {
 
     header nav ul li {
       width: 100%;
-      padding: 5px 0;
+      padding: 5px;
       margin: 0;
-  font-size: 11px;
+  font-size: 13px;
   border-top: 1px solid #ddd;
     }
 
@@ -423,27 +471,40 @@ header nav ul li:hover {
 }
 
   h3 {
-    padding-top: 12%;
-    font-size: 40px;
+    padding-top: 1px;
+    font-size: 20px;
   }
 
   h4 {
     font-size: 14px;
   }
 
+  #about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-tile {
+    width: 100%;
+  }
+  
   #about p {
     width: 80%;
   }
 
-  #mkz {
-    float: none;
-    width: 70%;
-    margin: 15px auto;
+  #about i {
+    font-size: 40px;
+  }
+
+  #work {
+    margin-top: 0px;
   }
 
   #projects {
+    margin-top: 0px;
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
   }
 
   .project-tile {
@@ -454,6 +515,16 @@ header nav ul li:hover {
   .project-tile img {
     width: 100%;
     border-radius: 5px;
+  }
+
+  #imprint {
+    width: 80%;
+    padding: 3%;
+    font-size: 0.7em;
+  }
+  
+  #imprint i {
+    top: 40px;
   }
 
 
