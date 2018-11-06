@@ -112,22 +112,10 @@ header nav ul li:hover {
 
 #welcome-section {
 height: 100%;
-<<<<<<< HEAD
 background: url(img/see.jpg);
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-||||||| merged common ancestors
-background: url(img/ichSee.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
-=======
-background: url(img/see.jpg);
-background-position: center center;
-background-size: cover;
-background-attachment: fixed;
->>>>>>> 582ca1a878705edf14cb9c033f73a6f6a3a351bf
 }
 
 #welcome-section h1 {
