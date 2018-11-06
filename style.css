@@ -12,7 +12,6 @@ body {
 }
 
 section {
-  min-height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -22,7 +21,7 @@ a {
 }
 
 a:hover {
-  color: black;
+  color: #76323F;
 }
 
 li {
@@ -34,11 +33,6 @@ h1, h2, h3, a {
   font-weight: 300;
   color: #565656;
   text-transform: uppercase;
-}
-
-h2 {
-  color: #565656;
-  font-weight: 300;
 }
 
 h3 {
@@ -86,7 +80,7 @@ z-index: 1;
   font-size: 30px;
   float: left;
   margin: 22px 0 0 50px;
-  color: black;
+  color: #565656;
 }
 
 #logo a:hover {
@@ -118,27 +112,27 @@ header nav ul li:hover {
 
 #welcome-section {
 height: 100%;
-/* background: url(img/papier.png);
+background: url(img/see.jpg);
 background-position: center center;
 background-size: cover;
-background-attachment: fixed; */
-background-color: #76323F;
+background-attachment: fixed;
 }
 
 #welcome-section h1 {
   text-align: center;
-  color:#d7cec7;
+  color: white;
   font-size: 100px;
   margin-top: 20%;
   margin-bottom: 0;
-  opacity: 1;
+  text-shadow: 1px 1px 2px black;
 }
 
 #welcome-section h2 {
-  color: #d7cec7;
+  color: white;
   font-size: 21px;
   text-align: center;
   padding: 5px;
+  text-shadow: 1px 1px 2px black;
 }
 
 /* About */
@@ -189,7 +183,9 @@ background-color: #76323F;
 }
 
 /* Work */
-
+#work {
+  height: 100%;
+}
 
 #projects {
   height: auto;
@@ -227,14 +223,26 @@ margin-top: 10%;
   /* Contact*/
 
  #contact {
-  background: url(img/telefon.jpg);
+  height: 90%;
+  background: url(img/telefon.png);
   width: 100%;
   background-position: center center;
-background-size: cover;
-background-attachment: fixed;
+  background-size: cover;
+  background-attachment: fixed;
  } 
 
-  form input, textarea {
+ .contact i {
+   font-size: 5em;
+   margin: 12% 5%;
+   color: #565656;
+ }
+
+ .contact a i:hover {
+    color: #76323F;
+ }
+
+
+  /* form input, textarea {
     font-family: "Merriweather", serif;
     font-size: 15px;
     margin-bottom: 10px;
@@ -276,7 +284,7 @@ form textarea {
 .button:hover {
   background-color: #d7cec7;
   color: #565656;
-}
+} */
 
 /* Footer*/
 
@@ -292,12 +300,14 @@ footer p {
   padding-top: 15px;
 }
 
+/* Impressum */
 #imprint {
   width: 50%;
   background-color: #d7cec7;
+  border-radius: 3px;
   text-align: left;
   margin: 5% auto;
-  padding: 5% 15%;
+  padding: 5%;
   line-height: 1.5;
 }
 
@@ -324,9 +334,15 @@ header {
   height: auto;
   padding-bottom: 4px;
 }
+
+section {
+height: auto;
+}
+
   #logo {
   font-size: 20px;
-  margin-top: 12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   }
 
   #welcome-section h1 {
@@ -339,33 +355,36 @@ header {
 }
 
   header nav {
-    margin-top: 0;
+    margin-top: 5px;
   }
 
   header nav ul li {
-font-size: 12px;
+font-size: 15px;
   }
 
 h3 {
-  padding-top: 12%;
-  font-size: 40px;
+  padding-top: 10%;
+  font-size: 35px;
 }
 
 #about p {
   width: 80%;
 }
 
-#mkz {
-  float: none;
-width: 70%;
-margin: 15px auto;
-}
-
 #projects {
-  width: 80%;
+  width: 95%;
   margin: 20px auto 0 auto;
+  font-size: 0.8em;
 }
 
+#imprint {
+  width: 80%;
+  padding: 3%;
+}
+
+#imprint i {
+  top: 90px;
+}
 
 }
 
@@ -377,17 +396,22 @@ margin: 15px auto;
     padding-bottom: 4px;
   }
 
-    #logo {
-    font-size: 15px;
-    margin-top: 7px;
+  section {
+    min-width: 100%;
+  }
+
+  #logo {
+    font-size: 8px;
+    margin-top: 0;
     }
 
     #welcome-section h1 {
-      font-size: 40px;
+      margin-top: 60%;
+      font-size: 35px;
     }
 
   #welcome-section h2 {
-    font-size: 14px;
+    font-size: 12px;
     margin-top: 5px;
   }
 
@@ -398,12 +422,12 @@ margin: 15px auto;
 
     header .fa-bars {
       font-size: 17px;
-      padding-top: 5px;
+      /* padding-top: 5px; */
       display: inline-block;
-      width: 100%;
+      /* width: 100%; */
       cursor: pointer;
       text-align: right;
-      margin: -25px 30px 0 0;
+      margin: 0;
     }
 
   header .fa-bars:hover {
@@ -424,9 +448,9 @@ header nav ul.open {
 
     header nav ul li {
       width: 100%;
-      padding: 5px 0;
+      padding: 5px;
       margin: 0;
-  font-size: 11px;
+  font-size: 13px;
   border-top: 1px solid #ddd;
     }
 
@@ -435,27 +459,40 @@ header nav ul li:hover {
 }
 
   h3 {
-    padding-top: 12%;
-    font-size: 40px;
+    padding-top: 1px;
+    font-size: 20px;
   }
 
   h4 {
     font-size: 14px;
   }
 
+  #about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-tile {
+    width: 100%;
+  }
+  
   #about p {
     width: 80%;
   }
 
-  #mkz {
-    float: none;
-    width: 70%;
-    margin: 15px auto;
+  #about i {
+    font-size: 40px;
+  }
+
+  #work {
+    margin-top: 0px;
   }
 
   #projects {
+    margin-top: 0px;
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
   }
 
   .project-tile {
@@ -466,6 +503,16 @@ header nav ul li:hover {
   .project-tile img {
     width: 100%;
     border-radius: 5px;
+  }
+
+  #imprint {
+    width: 80%;
+    padding: 3%;
+    font-size: 0.7em;
+  }
+  
+  #imprint i {
+    top: 40px;
   }
 
 
