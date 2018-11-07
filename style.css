@@ -367,14 +367,42 @@ h3 {
   font-size: 35px;
 }
 
+#about {
+  height: auto;
+}
+
 #about p {
   width: 80%;
 }
 
+#work {
+  height: auto;
+}
+
 #projects {
+  flex-direction: column;
   width: 95%;
   margin: 20px auto 0 auto;
   font-size: 0.8em;
+}
+
+.project-tile {
+  margin: 2% auto;
+  width: 60%;
+  font-size: 1.5em;
+  line-height: 1.2;
+}
+
+.project-tile hr {
+  margin: 0 auto;
+}
+
+.project-tile p {
+  margin: 3% auto;
+}
+
+.project-tile h4 {
+  margin: 3% auto;
 }
 
 #imprint {
@@ -422,9 +450,7 @@ h3 {
 
     header .fa-bars {
       font-size: 17px;
-      /* padding-top: 5px; */
       display: inline-block;
-      /* width: 100%; */
       cursor: pointer;
       text-align: right;
       margin: 0;
@@ -458,6 +484,10 @@ header nav ul li:hover {
   background-color: #eee;
 }
 
+.menu a {
+  margin: 0;
+}
+
   h3 {
     padding-top: 1px;
     font-size: 20px;
@@ -479,6 +509,7 @@ header nav ul li:hover {
   
   #about p {
     width: 80%;
+    text-align: left;
   }
 
   #about i {
@@ -487,6 +518,10 @@ header nav ul li:hover {
 
   #work {
     margin-top: 0px;
+  }
+
+  #work h3 {
+    margin-top: 25%;
   }
 
   #projects {
@@ -500,9 +535,23 @@ header nav ul li:hover {
     margin: 20px auto;
   }
 
+  .project-tile p {
+    font-size: 0.7em;
+  }
+
   .project-tile img {
     width: 100%;
     border-radius: 5px;
+  }
+
+  #contact h3 {
+    margin-top: 10%;
+    padding-top: 30%;
+  }
+
+  .contact {
+    width: 70px;
+    margin: 0 auto;
   }
 
   #imprint {
